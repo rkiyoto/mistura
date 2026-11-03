@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+    <entity name="ViewedMealEntity" representedClassName="ViewedMealEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="mealID" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="thumbnailURL" optional="YES" attributeType="String"/>
+        <attribute name="viewedAt" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
 </model>
