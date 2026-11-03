@@ -1,0 +1,7 @@
+# Parte das regras padrão do SwiftLint e liga apenas as opcionais abaixo
+opt_in_rules:
+  - empty_count
+  - fatal_error_message
+  - first_where
+  - force_unwrapping
+  - last_where

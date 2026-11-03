@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Xcode: dados por usuário (o scheme compartilhado fica em xcshareddata e é versionado)
+xcuserdata/
+*.xcuserstate
+
+# Xcode: artefatos de build e de teste
+build/
+DerivedData/
+*.xcresult
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+# Swift Package Manager (o Package.resolved é versionado para fixar as dependências)
+.build/
+.swiftpm/

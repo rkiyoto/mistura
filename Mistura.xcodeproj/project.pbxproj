@@ -6,8 +6,25 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A1B2C3D4E5F6A7B8C9D00010 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6A7B8C9D0000E /* Quick */; };
+		A1B2C3D4E5F6A7B8C9D00011 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6A7B8C9D0000F /* Nimble */; };
+		A1B2C3D4E5F6A7B8C9D00018 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6A7B8C9D0001A /* SnapshotTesting */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1B2C3D4E5F6A7B8C9D00007 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03E3497E30904E7D00628E96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03E3498530904E7D00628E96;
+			remoteInfo = Mistura;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		03E3498630904E7D00628E96 /* Mistura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mistura.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B2C3D4E5F6A7B8C9D00001 /* MisturaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MisturaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -17,6 +34,34 @@
 				Info.plist,
 			);
 			target = 03E3498530904E7D00628E96 /* Mistura */;
+		};
+		A1B2C3D4E5F6A7B8C9D00017 /* Exceptions for "MisturaTests" folder in "MisturaTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				.swiftlint.yml,
+				"Scenes/Detail/__Snapshots__/DetailViewTests/render.error-to-loaded.png",
+				Scenes/Detail/__Snapshots__/DetailViewTests/render.error.png,
+				"Scenes/Detail/__Snapshots__/DetailViewTests/render.loaded-minimal.png",
+				"Scenes/Detail/__Snapshots__/DetailViewTests/render.loaded-to-error.png",
+				Scenes/Detail/__Snapshots__/DetailViewTests/render.loaded.png,
+				Scenes/Detail/__Snapshots__/DetailViewTests/render.loading.png,
+				Scenes/Detail/__Snapshots__/IngredientItemViewTests/render.checked.png,
+				"Scenes/Detail/__Snapshots__/IngredientItemViewTests/render.unchecked-again.png",
+				Scenes/Detail/__Snapshots__/IngredientItemViewTests/render.unchecked.png,
+				Scenes/Search/__Snapshots__/HistoryHeaderViewTests/render.default.png,
+				Scenes/Search/__Snapshots__/MealCellTests/render.image.png,
+				"Scenes/Search/__Snapshots__/MealCellTests/render.long-title.png",
+				Scenes/Search/__Snapshots__/MealCellTests/render.placeholder.png,
+				Scenes/Search/__Snapshots__/SearchViewTests/render.empty.png,
+				"Scenes/Search/__Snapshots__/SearchViewTests/render.error-to-results.png",
+				Scenes/Search/__Snapshots__/SearchViewTests/render.error.png,
+				Scenes/Search/__Snapshots__/SearchViewTests/render.history.png,
+				Scenes/Search/__Snapshots__/SearchViewTests/render.idle.png,
+				Scenes/Search/__Snapshots__/SearchViewTests/render.loading.png,
+				"Scenes/Search/__Snapshots__/SearchViewTests/render.results-to-error.png",
+				Scenes/Search/__Snapshots__/SearchViewTests/render.results.png,
+			);
+			target = A1B2C3D4E5F6A7B8C9D00006 /* MisturaTests */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -29,6 +74,14 @@
 			path = Mistura;
 			sourceTree = "<group>";
 		};
+		A1B2C3D4E5F6A7B8C9D00002 /* MisturaTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A1B2C3D4E5F6A7B8C9D00017 /* Exceptions for "MisturaTests" folder in "MisturaTests" target */,
+			);
+			path = MisturaTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +92,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1B2C3D4E5F6A7B8C9D00004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B2C3D4E5F6A7B8C9D00010 /* Quick in Frameworks */,
+				A1B2C3D4E5F6A7B8C9D00011 /* Nimble in Frameworks */,
+				A1B2C3D4E5F6A7B8C9D00018 /* SnapshotTesting in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -46,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				03E3498830904E7D00628E96 /* Mistura */,
+				A1B2C3D4E5F6A7B8C9D00002 /* MisturaTests */,
 				03E3498730904E7D00628E96 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				03E3498630904E7D00628E96 /* Mistura.app */,
+				A1B2C3D4E5F6A7B8C9D00001 /* MisturaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +137,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A1B2C3D4E5F6A7B8C9D00013 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				03E3498830904E7D00628E96 /* Mistura */,
@@ -82,6 +148,33 @@
 			productName = Mistura;
 			productReference = 03E3498630904E7D00628E96 /* Mistura.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A1B2C3D4E5F6A7B8C9D00006 /* MisturaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B2C3D4E5F6A7B8C9D00009 /* Build configuration list for PBXNativeTarget "MisturaTests" */;
+			buildPhases = (
+				A1B2C3D4E5F6A7B8C9D00003 /* Sources */,
+				A1B2C3D4E5F6A7B8C9D00004 /* Frameworks */,
+				A1B2C3D4E5F6A7B8C9D00005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1B2C3D4E5F6A7B8C9D00008 /* PBXTargetDependency */,
+				A1B2C3D4E5F6A7B8C9D00015 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A1B2C3D4E5F6A7B8C9D00002 /* MisturaTests */,
+			);
+			name = MisturaTests;
+			packageProductDependencies = (
+				A1B2C3D4E5F6A7B8C9D0000E /* Quick */,
+				A1B2C3D4E5F6A7B8C9D0000F /* Nimble */,
+				A1B2C3D4E5F6A7B8C9D0001A /* SnapshotTesting */,
+			);
+			productName = MisturaTests;
+			productReference = A1B2C3D4E5F6A7B8C9D00001 /* MisturaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,6 +189,10 @@
 					03E3498530904E7D00628E96 = {
 						CreatedOnToolsVersion = 26.6;
 					};
+					A1B2C3D4E5F6A7B8C9D00006 = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = 03E3498530904E7D00628E96;
+					};
 				};
 			};
 			buildConfigurationList = 03E3498130904E7D00628E96 /* Build configuration list for PBXProject "Mistura" */;
@@ -107,18 +204,32 @@
 			);
 			mainGroup = 03E3497D30904E7D00628E96;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A1B2C3D4E5F6A7B8C9D0000C /* XCRemoteSwiftPackageReference "Quick" */,
+				A1B2C3D4E5F6A7B8C9D0000D /* XCRemoteSwiftPackageReference "Nimble" */,
+				A1B2C3D4E5F6A7B8C9D00012 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+				A1B2C3D4E5F6A7B8C9D00019 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 03E3498730904E7D00628E96 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				03E3498530904E7D00628E96 /* Mistura */,
+				A1B2C3D4E5F6A7B8C9D00006 /* MisturaTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		03E3498430904E7D00628E96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B2C3D4E5F6A7B8C9D00005 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +246,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1B2C3D4E5F6A7B8C9D00003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1B2C3D4E5F6A7B8C9D00008 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03E3498530904E7D00628E96 /* Mistura */;
+			targetProxy = A1B2C3D4E5F6A7B8C9D00007 /* PBXContainerItemProxy */;
+		};
+		A1B2C3D4E5F6A7B8C9D00013 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = A1B2C3D4E5F6A7B8C9D00014 /* SwiftLintBuildToolPlugin */;
+		};
+		A1B2C3D4E5F6A7B8C9D00015 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = A1B2C3D4E5F6A7B8C9D00016 /* SwiftLintBuildToolPlugin */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		03E3499D30904E7E00628E96 /* Debug */ = {
@@ -150,7 +284,6 @@
 				INFOPLIST_FILE = Mistura/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -182,7 +315,6 @@
 				INFOPLIST_FILE = Mistura/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -255,7 +387,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -313,13 +445,55 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1B2C3D4E5F6A7B8C9D0000A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZM2DFKXX6T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kiyoto.MisturaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mistura.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mistura";
+			};
+			name = Debug;
+		};
+		A1B2C3D4E5F6A7B8C9D0000B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZM2DFKXX6T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kiyoto.MisturaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mistura.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mistura";
 			};
 			name = Release;
 		};
@@ -344,7 +518,79 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A1B2C3D4E5F6A7B8C9D00009 /* Build configuration list for PBXNativeTarget "MisturaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B2C3D4E5F6A7B8C9D0000A /* Debug */,
+				A1B2C3D4E5F6A7B8C9D0000B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A1B2C3D4E5F6A7B8C9D0000C /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.6.2;
+			};
+		};
+		A1B2C3D4E5F6A7B8C9D0000D /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.8.0;
+			};
+		};
+		A1B2C3D4E5F6A7B8C9D00012 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.65.1;
+			};
+		};
+		A1B2C3D4E5F6A7B8C9D00019 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.19.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A1B2C3D4E5F6A7B8C9D0000E /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1B2C3D4E5F6A7B8C9D0000C /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		A1B2C3D4E5F6A7B8C9D0000F /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1B2C3D4E5F6A7B8C9D0000D /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		A1B2C3D4E5F6A7B8C9D00014 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1B2C3D4E5F6A7B8C9D00012 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+		A1B2C3D4E5F6A7B8C9D00016 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1B2C3D4E5F6A7B8C9D00012 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+		A1B2C3D4E5F6A7B8C9D0001A /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1B2C3D4E5F6A7B8C9D00019 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 03E3497E30904E7D00628E96 /* Project object */;
 }
