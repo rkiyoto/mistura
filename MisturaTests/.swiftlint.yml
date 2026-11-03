@@ -1,0 +1,6 @@
+disabled_rules:
+  - file_length
+  - function_body_length
+  - type_body_length
+  - force_unwrapping
+  - static_over_final_class
